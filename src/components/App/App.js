@@ -4,7 +4,7 @@ import ItemList from '../ItemList/ItemList';
 import Footer from '../Footer/Footer';
 
 const App = () => (<div>
-  <h1>todos</h1>
+  <h1>Todos</h1>
   <InputItem />
   <ItemList />
   <Footer />

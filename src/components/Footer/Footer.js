@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = ({count}) => (<div>
-    <div>Невыполненных заданий: {count}</div>
+    <div>Невыполненных заданий: {count} </div>
     <ul>
         <li>Все</li>
         <li>Выполненные</li>
