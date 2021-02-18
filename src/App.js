@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
-const a = 32;
-const flag = false;
+import {count, length} from './number'
 
 
 function App() {
@@ -14,20 +12,10 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
 
-        <p style={{
-          color: 'red',
-          fontSize: 2+10
-        }}>
-          Hello World!
+        <p>
+          count * length = {count*length}
         </p>
-        <p>{a}</p>
-        <p>{24}</p>
-        <p>{ flag ? 'Flag is true' : 'Flag is false'}</p>
-        <p>{flag && 'Flag is true'}
-        {null}
-        {undefined}
-        {false}
-        {true}</p>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
