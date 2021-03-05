@@ -2,6 +2,7 @@ import React from 'react';
 import InputItem from '../InputItem/InputItem';
 import ItemList from '../ItemList/ItemList';
 import Footer from '../Footer/Footer';
+import './App.css'
 
 
 const props = {
@@ -24,8 +25,8 @@ const App = () => {
 
 
   return (
-  <div>
-      <h1>Todos</h1>
+  <div className='wrap'>
+      <h1 className='wrap_title'>Todos</h1>
       <InputItem />
       <ItemList items={items}/>
       <Footer count={props.count} />
