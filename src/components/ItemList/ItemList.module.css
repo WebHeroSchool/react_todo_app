@@ -1,0 +1,13 @@
+.item_list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item {
+    list-style-type: none;
+    width: 800px;
+}
+
+.icon {
+    justify-self: flex-end;
+}

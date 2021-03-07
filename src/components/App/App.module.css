@@ -1,6 +1,10 @@
 .wrap {
     margin: auto;
-    width: 300px;
+    width: 900px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .title {
