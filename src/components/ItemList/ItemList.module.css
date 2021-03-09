@@ -1,13 +1,8 @@
-.item_list {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .item {
     list-style-type: none;
-    width: 800px;
-}
-
-.icon {
-    justify-self: flex-end;
+    width: 750px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: -55px;
 }
