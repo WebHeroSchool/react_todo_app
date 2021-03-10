@@ -8,32 +8,35 @@ const props = {
   count: 10
 };
 
-const App = () => {
+class App extends React.Component {
 
-  const items = [
-    {
-      value: 'Постричься',
-      isDone: true
-    },
-    {
-      value: 'Погладить вещи',
-      isDone: false
-    },
-    {
-      value: 'Сделать уборку дома',
-      isDone: true
-    }
-  ];
+  state = {
+    items: [
+      {
+        value: 'Постричься',
+        isDone: true
+      },
+      {
+        value: 'Погладить вещи',
+        isDone: false
+      },
+      {
+        value: 'Сделать уборку дома',
+        isDone: true
+      }
+    ]
+  } 
 
+  render () {
 
-  return (
-  <div className={styles.wrap}>
-      <h1 className={styles.title}>Todos</h1>
-      <InputItem />
-      <ItemList items={items}/>
-      <Footer count={props.count} />
-  </div>);
-
+    return (
+      <div className={styles.wrap}>
+        <h1 className={styles.title}>Todos</h1>
+        <InputItem />
+        <ItemList items={this.state.items}/>
+        <Footer count={props.count} />
+      </div>);
+  }
 }
 
 export default App;

@@ -1,0 +1,8 @@
+.item {
+    list-style-type: none;
+    width: 750px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: -55px;
+}
